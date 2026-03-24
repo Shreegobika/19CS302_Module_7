@@ -4,23 +4,29 @@
 To write a C program to read a file name from user and create that file using fopen().
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+Start. Define a variables. Write a program to read a file name from user and create that file using fopen(). Read the value using scanf. Ask the user to make an input. Print out the answer. End.
 
 ## Program:
 ```
 /*
 C program to read a file name from user and create that file using fopen().
-Developed by: 
-RegisterNumber:  
+
+#include <stdio.h> 
+int main()
+{FILE *p;
+char name[40]; 
+scanf("%s",name);
+p=fopen("name","w");
+printf("%s File Created Successfully\n",name); 
+printf("%s File Opened\n",name);
+fclose(p);
+printf("%s File Closed",name);
+} 
 */
 ```
 
 ## Output:
-
+<img width="1004" height="324" alt="image" src="https://github.com/user-attachments/assets/52b81e04-d139-450f-8874-60ef208a0fa7" />
 
 
 ## Result:
